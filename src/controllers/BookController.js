@@ -62,11 +62,11 @@ const viewAllBooks =  async(req ,res) => {
 // View details of a specific book by its ID ===========================================================================
 
 const getBookDetailsById =  async(req ,res) => {  
-    let id = req.params._id   
+    // let id = req.params._id   
 
     try {
        
-        let bookDetails = await fetchBook(id)
+        let bookDetails = await fetchBook({"_id": req.params._id})
        console.log(bookDetails)
         if( !bookDetails ){             
             res.status(400).send({success : false,  message: "There is no book in the data with this id", data: {}, code: 400 })
@@ -89,7 +89,7 @@ try {
     let id = req.params._id
    
    
-        let editedBookdetails = await updateBookDetails({ id }, updates, { new: true })
+        let editedBookdetails = await updateBookDetails({"_id": req.params._id} , updates, { new: true })
 
         if( !editedBookdetails ){             
             res.status(400).send({success : false,  message: "There is no book in the data with this id", data: {}, code: 400 })
@@ -111,7 +111,7 @@ const deleteBookDetails = async (req, res) => {
     let id = req.params._id
 
     try {
-        const deletedData = await Book.findOneAndDelete({id});
+        const deletedData = await Book.findOneAndDelete({"_id": req.params._id});
 
         if( !deletedData ){             
             res.status(400).send({success : false,  message: "There is no book in the data with this id", data: {}, code: 400 })

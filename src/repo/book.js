@@ -19,7 +19,7 @@ const saveBookDetails = async (data) => {
 const updateBookDetails = async (condition, data) => {
     try {
         const doc = await Book.findOneAndUpdate({ ...condition }, { ...data }, { new: true });
-        return doc
+        if(!!doc) return doc
     } catch (error) {
         console.log('Error While updating bookdata!')
     }
