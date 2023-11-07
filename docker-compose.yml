@@ -1,0 +1,29 @@
+version: "2"
+
+services:
+       Dockertry:
+           container_name: brewapps
+           image: brewapps
+           depends_on:
+             - mongo             
+           restart: always
+           build: .
+           ports:
+             - "3000:3000"
+           environment:
+             - MONGO_URI=mongodb://mongo            
+             - NODE_TLS_REJECT_UNAUTHORIZED=0
+
+         
+       mongo:
+           image: mongo
+           restart: always
+           ports:
+              - "127.0.0.1:27017:27017"
+           volumes:
+              -  ./data:/data/db 
+
+       
+          
+volumes:
+       data:
