@@ -1,0 +1,774 @@
+{
+	"info": {
+		"_postman_id": "370f0c7e-fddc-43cd-862b-0ef1ff046ebb",
+		"name": "brewApps",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19344450"
+	},
+	"item": [
+		{
+			"name": "deleteBookDetails",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/books/deleteBookDetails/654a7da531bc36e2cb56c288",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"books",
+						"deleteBookDetails",
+						"654a7da531bc36e2cb56c288"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "deleteBookDetails",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/books/deleteBookDetails/654a87f9a1ff70b7cbc08335",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"books",
+								"deleteBookDetails",
+								"654a87f9a1ff70b7cbc08335"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "268"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"10c-WYVwFW58K8wTPs0oiW5/7NecFMI\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 07 Nov 2023 18:58:30 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"book info deleted!\",\n    \"data\": {\n        \"_id\": \"654a87f9a1ff70b7cbc08335\",\n        \"title\": \"book5\",\n        \"author\": \"tripathi\",\n        \"summary\": \"books and life in practical world\",\n        \"createdAt\": \"2023-11-07T18:54:49.594Z\",\n        \"updatedAt\": \"2023-11-07T18:58:14.538Z\",\n        \"__v\": 0\n    },\n    \"code\": 200\n}"
+				},
+				{
+					"name": "deleteBookDetails",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/books/deleteBookDetails/654a87f9a1ff70b7cbc08334",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"books",
+								"deleteBookDetails",
+								"654a87f9a1ff70b7cbc08334"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "92"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"5c-kfUbQ4omdrU4Uw4umvGxAdx9WMA\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 07 Nov 2023 19:01:50 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": false,\n    \"message\": \"There is no book in the data with this id\",\n    \"data\": {},\n    \"code\": 400\n}"
+				}
+			]
+		},
+		{
+			"name": "editBookDetails",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"book5\",\r\n    \"author\": \"tripathi\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/books/editBookDetails/654a87f9a1ff70b7cbc08336",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"books",
+						"editBookDetails",
+						"654a87f9a1ff70b7cbc08336"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"bookIndustryNew\",\r\n    \"author\": \"tripathi\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/books/editBookDetails/6549acb4d1234ad263ed33f8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"books",
+								"editBookDetails",
+								"6549acb4d1234ad263ed33f8"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "257"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"101-QTVVD2ABbXwu8sG4NWGA6WrDt08\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 07 Nov 2023 03:37:13 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"book info updated!\",\n    \"data\": {\n        \"_id\": \"6549ac34d1234ad263ed33f8\",\n        \"title\": \"bookIndustryNew\",\n        \"author\": \"tripathi\",\n        \"summary\": \"life journey\",\n        \"createdAt\": \"2023-11-07T03:17:09.402Z\",\n        \"updatedAt\": \"2023-11-07T03:37:13.645Z\",\n        \"__v\": 0\n    },\n    \"code\": 200\n}"
+				},
+				{
+					"name": "editBookDetails",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"book5\",\r\n    \"author\": \"tripathi\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/books/editBookDetails/654a87f9a1ff70b7cbc08336",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"books",
+								"editBookDetails",
+								"654a87f9a1ff70b7cbc08336"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "92"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"5c-kfUbQ4omdrU4Uw4umvGxAdx9WMA\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 07 Nov 2023 19:00:59 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": false,\n    \"message\": \"There is no book in the data with this id\",\n    \"data\": {},\n    \"code\": 400\n}"
+				}
+			]
+		},
+		{
+			"name": "viewAllBooks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/books/viewAllBooks?page=0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"books",
+						"viewAllBooks"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "viewAllBooks",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/books/viewAllBooks?page=0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"books",
+								"viewAllBooks"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "675"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2a3-otOHawWDI7z6Qbd/cjOzaCPfK0M\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 07 Nov 2023 18:29:05 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"all books details\",\n    \"data\": [\n        {\n            \"_id\": \"654a7db331bc36e2cb56c28c\",\n            \"title\": \"book3\",\n            \"author\": \"Divyansh\",\n            \"summary\": \"books and life in practical world\",\n            \"createdAt\": \"2023-11-07T18:10:59.748Z\",\n            \"updatedAt\": \"2023-11-07T18:10:59.748Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"654a7da531bc36e2cb56c288\",\n            \"title\": \"book2\",\n            \"author\": \"Divyansh\",\n            \"summary\": \"books and life in practical world\",\n            \"createdAt\": \"2023-11-07T18:10:45.535Z\",\n            \"updatedAt\": \"2023-11-07T18:10:45.535Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"654a7d6231bc36e2cb56c283\",\n            \"title\": \"book1\",\n            \"author\": \"Divyansh\",\n            \"summary\": \"books and life in practical world\",\n            \"createdAt\": \"2023-11-07T18:09:38.811Z\",\n            \"updatedAt\": \"2023-11-07T18:09:38.811Z\",\n            \"__v\": 0\n        }\n    ],\n    \"code\": 200\n}"
+				},
+				{
+					"name": "viewAllBooks",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/books/viewAllBooks?page=0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"books",
+								"viewAllBooks"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "473"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1d9-fMnHXyNQgFBhozqM2QmNnF+6dYs\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 07 Nov 2023 18:58:42 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"all books details\",\n    \"data\": [\n        {\n            \"_id\": \"654a8800a1ff70b7cbc08339\",\n            \"title\": \"book 2\",\n            \"author\": \"Divyansh\",\n            \"summary\": \"books and life in practical world\",\n            \"createdAt\": \"2023-11-07T18:54:56.293Z\",\n            \"updatedAt\": \"2023-11-07T18:54:56.293Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"654a87efa1ff70b7cbc08332\",\n            \"title\": \"book0\",\n            \"author\": \"tripathi\",\n            \"summary\": \"books and life in practical world\",\n            \"createdAt\": \"2023-11-07T18:54:39.557Z\",\n            \"updatedAt\": \"2023-11-07T18:55:20.219Z\",\n            \"__v\": 0\n        }\n    ],\n    \"code\": 200\n}"
+				}
+			]
+		},
+		{
+			"name": "addBookDetails",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"bookIndustry\",\r\n    \"author\":\"Divyansh\",\r\n    \"summary\":\"books and life in practical world\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/books/addBookDetails",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"books",
+						"addBookDetails"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"book1\",\r\n    \"author\":\"Divyansh\",\r\n    \"summary\":\"books and life in practical world\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/books/addBookDetails",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"books",
+								"addBookDetails"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "265"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"109-runl/m6RUoppcjlh/oEhyTGCwBA\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 07 Nov 2023 18:09:12 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"book info added\",\n    \"data\": {\n        \"title\": \"book1\",\n        \"author\": \"Divyansh\",\n        \"summary\": \"books and life in practical world\",\n        \"_id\": \"654a7d4831bc36e2cb56c27f\",\n        \"createdAt\": \"2023-11-07T18:09:12.726Z\",\n        \"updatedAt\": \"2023-11-07T18:09:12.726Z\",\n        \"__v\": 0\n    },\n    \"code\": 200\n}"
+				},
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"book1\",\r\n    \"author\":\"Divyansh\",\r\n    \"summary\":\"books and life in practical world\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/books/addBookDetails",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"books",
+								"addBookDetails"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "71"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"47-TGYLf2kieXAYnw+f+2VYalihSFc\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 07 Nov 2023 18:10:34 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": false,\n    \"message\": \"Duplicate Book Title\",\n    \"data\": {},\n    \"code\": 400\n}"
+				},
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"book3\",\r\n    \"author\":\"Divyansh\",\r\n    \"summary\":\"books and life in practical world\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/books/addBookDetails",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"books",
+								"addBookDetails"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "265"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"109-tmiN/j7sRIfhWJbiCqj1jpkBqGY\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 07 Nov 2023 18:10:59 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"book info added\",\n    \"data\": {\n        \"title\": \"book3\",\n        \"author\": \"Divyansh\",\n        \"summary\": \"books and life in practical world\",\n        \"_id\": \"654a7db331bc36e2cb56c28c\",\n        \"createdAt\": \"2023-11-07T18:10:59.748Z\",\n        \"updatedAt\": \"2023-11-07T18:10:59.748Z\",\n        \"__v\": 0\n    },\n    \"code\": 200\n}"
+				}
+			]
+		},
+		{
+			"name": "getBookDetailsById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/books/getBookDetailsById/654a87f9a1ff70b7cbc08335",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"books",
+						"getBookDetailsById",
+						"654a87f9a1ff70b7cbc08335"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
